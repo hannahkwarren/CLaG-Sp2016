@@ -1,8 +1,25 @@
 # Peanut Butter Jelly Time!
 
 # First Goal: Create a program that can tell you whether or not you can make a peanut butter and jelly sandwich
+peanutb = 1
+jelly = 1
+bread = 1
+
+if (peanutb > 0) and (jelly > 0) and (bread >= 2):
+	print "You can make a sandwich! Enjoy!"
+elif bread == 1:
+	print "You can't make a full sandwich. Halfsies. :("
+else: print "No pb&j for you. Boo."
 
 # Second Goal: Modify that program to tell you: if you can make a sandwich, how many you can make
+peanutb = 1
+jelly = 1
+bread = 8
+full_sandwiches = (bread / 2)
+
+if (peanutb > 0) and (jelly > 0) and (full_sandwiches >= 1):
+    print "You can make {2} sandwiches!".format(peanutb, jelly, full_sandwiches) 
+else: print "You can't make any sandwiches. :("
 
 # Third Goal: Modify that program to allow you to make open-face sandwiches if you have an odd number of slices of bread ( )
 
