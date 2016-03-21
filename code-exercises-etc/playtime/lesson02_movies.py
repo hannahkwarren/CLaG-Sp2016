@@ -3,7 +3,21 @@
 # Goal #1: Create a program that will print out a list of movie titles and a set of ratings defined below into a particular format.
 
 # First, choose any five movies you want.
+##Chocolat, PG-13, 3/3, 7.3/10, Drama/Romance
+##Deadpool, R, 1/3, 8.4/10, Action/Adventure/Comedy
+##Star Wars: Episode VII, The Force Awakens, PG-13, 3/3, 8.4/10, Action/Adventure/Fantasy
+##Clouds of Sils Maria, R, 3/3, 6.8/10, Drama
+##Mad Max: Fury Road, R, 3/3, 8.1/10, Action/Adventure/Sci-Fi
 
+movie_titles = ['Chocolat', 'Deadpool', 'Star Wars: Episode VII, The Force Awakens', 'Clouds of Sils Maria', 'Mad Max: Fury Road']
+parental_rating = ['PG-13', 'R', 'PG-13', 'R', 'R']
+bechdel_rating = ['3/3', '1/3', '3/3', '3/3', '3/3']
+imdb_rating = ['7.3/10', '8.4/10', '8.4/10', '6.8/10', '8.1/10']
+genre = ['Drama/Romance', 'Action/Adventure/Comedy', 'Action/Adventure/Fantasy', 'Drama', 'Action/Adventure/Sci-Fi']
+
+for movies, ratings, bechdel, imdb, genre in zip(movie_titles, parental_rating, bechdel_rating, imdb_rating, genre):
+    print '"{0}", {1}, {2}, {3}, {4}' .format(movies, ratings, bechdel, imdb, genre)
+    
 # Next, look each movie up manually to find out four pieces of information:
 #		Their parental guidance rating (G, PG, PG-13, R)
 #		Their Bechdel Test Rating (See http://shannonvturner.com/bechdel or http://bechdeltest.com/)
