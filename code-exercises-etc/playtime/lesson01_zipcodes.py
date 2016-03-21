@@ -11,19 +11,26 @@ studybuddy_4 = 'Kristen Link Logan, 264 Craig Street, Syracuse, NY 13211'
 studybuddy_5 = 'Nina Verity, 111 Bridge St, Solvey, NY 13209'
 
 # Goal 1: Create a program that simply shows all the ZIP codes.
-# Sample output:
-# 13152
-# 13224
-# 13078
-# (etc)
+print studybuddy_1[-5:]
+print studybuddy_2[-5:]
+print studybuddy_3[-5:]
+print studybuddy_4[-5:]
+print studybuddy_5[-5:]
 
 # Goal 2: Modify your program to output all the ZIP codes on the same line, with an an explanatory sentence.
-# Sample output: (but use any language you want!)
-# Our study group included people from these ZIP codes: 13152, 13224, 13078, (etc).
+print "Our study group includes people from the following ZIP codes: {0}, {1}, {2}, {3}, {4}.".format(studybuddy_1[-5:], studybuddy_2[-5:], studybuddy_3[-5:], studybuddy_4[-5:], studybuddy_5[-5:])
 
 # Goal 3: Modify your program to show each study buddy's first name and ZIP code.
-# Sample output: (again, use any language you want!)
-# Alison lives in 13152.
-# Dee lives in 13224.
-# Andrea lives in 13078.
-# (etc)
+buddy1_fname = studybuddy_1.find(" ")
+buddy2_fname = studybuddy_2.find(" ")
+buddy3_fname = studybuddy_3.find(" ")
+buddy4_fname = studybuddy_4.find(" ")
+buddy5_fname = studybuddy_5.find(" ")
+
+print "{0} lives in {1}.".format(studybuddy_1[0:buddy1_fname], studybuddy_1[-5:])
+print "{0} lives in {1}.".format(studybuddy_2[0:buddy2_fname], studybuddy_2[-5:])
+print "{0} lives in {1}.".format(studybuddy_3[0:buddy3_fname], studybuddy_3[-5:])
+print "{0} lives in {1}.".format(studybuddy_4[0:buddy4_fname], studybuddy_4[-5:])
+print "{0} lives in {1}.".format(studybuddy_5[0:buddy5_fname], studybuddy_5[-5:])
+
+

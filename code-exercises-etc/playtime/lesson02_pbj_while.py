@@ -1,12 +1,18 @@
-# Difficulty level: Beginner
+# Goal #1: Write a new version of the PB&J program that uses a while loop.
+#Print "Making sandwich #" and the number of the sandwich until you are out of bread, peanut butter, or jelly.
 
-# Goal #1: Write a new version of the PB&J program that uses a while loop.  Print "Making sandwich #" and the number of the sandwich until you are out of bread, peanut butter, or jelly.
+bread = 4
+peanut_butter = 3
+jelly = 10
+sandwiches = 0
 
-# Example:
-# bread = 4
-# peanut_butter = 3
-# jelly = 10
-
+while bread >= 2 and peanut_butter >= 1 and jelly >= 1:
+    sandwiches = sandwiches + 1
+    print "Making sandwich #{0}".format(sandwiches)
+    bread = (bread - 2)
+    jelly = (jelly - 1)
+    peanut_butter = (peanut_butter - 1)
+    
 # Output:
 # Making sandwich #1
 # Making sandwich #2
